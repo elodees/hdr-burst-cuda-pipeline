@@ -27,6 +27,13 @@ Cette phase prend le relais, charge les fichiers `.mat` et applique le traitemen
 
 ---
 
+## 📷 Rendu Visuel du Traitement
+Voici le résultat final généré par les noyaux CUDA du framework :
+
+![Rendu HDR Burst Fusion](apercu_hdr_fusion.png)
+
+---
+
 ## 📂 Structure du Répertoire GitHub
 
 ```text
