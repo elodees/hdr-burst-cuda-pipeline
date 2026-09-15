@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / Windows cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vs/
+.idea/
+.spyderproject/
+
+# Data and binaries (Exclusion des gros fichiers DNG et MAT du burst)
+*.dng
+*.mat
+*.tiff
+*.png
+
+# Except documentation samples
+!33TJ_20150722_171315_319/
