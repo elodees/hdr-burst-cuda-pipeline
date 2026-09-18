@@ -134,7 +134,7 @@ def list_mat_burst_files(raw_pattern, color_desc, black_levels, white_level, cam
     
     plt.figure(num="3. hdr-burst-cuda-pipeline", figsize=(7, 7))
     plt.imshow(hdr_burst, cmap='gray', vmin=0.0, vmax=1.0)
-    plt.title("4. hdr-burst")
+    plt.title("3. hdr-burst")
     plt.xticks([])
     plt.yticks([])
     plt.tight_layout()
@@ -151,7 +151,7 @@ def list_mat_burst_files(raw_pattern, color_desc, black_levels, white_level, cam
     
     plt.figure(num="4. Démosaïquage", figsize=(7, 7))
     plt.imshow(Demosaic, vmin=0.0, vmax=1.0)
-    plt.title("5. Démosaïquage")
+    plt.title("4. Démosaïquage")
     plt.xticks([])
     plt.yticks([])
     plt.tight_layout()
