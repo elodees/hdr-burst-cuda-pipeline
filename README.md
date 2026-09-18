@@ -103,3 +103,14 @@ python hdr_images_fusion_pipeline.py
 
 ## 📄 Licence
 Ce projet est distribué sous licence Apache 2.0. Voir le fichier `LICENSE` pour plus de détails.
+
+## Prestations de Conseil & R&D Appliquée
+1. Prototypage rapide d'opérateurs mathématiques et physiques
+L'intégration de nouvelles formules mathématiques au plus proche du silicium impose généralement aux équipes de R&D des semaines de plomberie informatique basse couche (allocation mémoire, synchronisation, gestion des fils d'exécution). En s'appuyant sur mon laboratoire virtuel propriétaire elodees et sa base de plus de 100 modules algorithmiques interconnectés (Numba CUDA JIT), je traduis instantanément vos modèles théoriques en code de production parallèle. Qu'il s'agisse de concevoir un stencil non-linéaire adaptatif de correction de pixels défectueux ou un opérateur de calibration de capteur unitaire, vos concepts physiques sont testés, profilés et validés sur le plan matériel en moins de 48 heures.
+
+2. Optimisation de la bande passante et durcissement face aux contraintes VRAM
+Pour éliminer les risques de saturation mémoire (Out-Of-Memory) et de latence, les pipelines industriels doivent s'affranchir des bibliothèques génériques lourdes. J'interviens sur vos flux de données brutes (RAW) pour restructurer vos traitements autour de deux verrous architecturaux stricts : une double boucle de streaming spatial par tuiles dynamiques (512/1024) et une allocation mémoire optimisée en Mémoire Partagée (Shared Memory SRAM intra-SM). En forçant l'isolation et le nettoyage déterministe de la mémoire GPU à chaque itération, vos algorithmes d'imagerie les plus complexes (comme la fusion temporelle robuste ou le Tone Mapping logarithmique local) sont durcis pour s'exécuter de manière stable sous un plafond constant de 50 Mo de VRAM, garantissant leur viabilité sur des volumes de données multi-terabytes.
+
+3. Validation et garantie de portabilité sur architectures matérielles contraintes
+Le prototypage sur des infrastructures cloud surdimensionnées masque souvent les failles d'efficience réelle des algorithmes d'IA embarquée (On-Device AI). Ma méthodologie consiste à évaluer vos pipelines au cœur d'un banc d'essai matériel contraint (architecture NVIDIA Maxwell de référence). Si vos opérateurs saturent la bande passante ou souffrent de conflits de bancs de mémoire (Bank Conflicts), mes outils de profilage natifs (mesures sub-millisecondes post-JIT warm-up) identifient immédiatement les goulots d'étranglement. Un algorithme validé, optimisé et stabilisé dans mon environnement virtuel offre une garantie mathématique de portabilité, de frugalité et d'efficacité énergétique maximale avant son déploiement à grande échelle sur vos puces cibles (NVIDIA Jetson, puces STMicroelectronics, systèmes embarqués).
+
