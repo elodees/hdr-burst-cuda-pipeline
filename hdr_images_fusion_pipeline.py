@@ -132,7 +132,7 @@ def list_mat_burst_files(raw_pattern, color_desc, black_levels, white_level, cam
     print(hdr_burst)
     print()
     
-    plt.figure(num="4. hdr-burst-cuda-pipeline", figsize=(7, 7))
+    plt.figure(num="3. hdr-burst-cuda-pipeline", figsize=(7, 7))
     plt.imshow(hdr_burst, cmap='gray', vmin=0.0, vmax=1.0)
     plt.title("4. hdr-burst")
     plt.xticks([])
@@ -149,7 +149,7 @@ def list_mat_burst_files(raw_pattern, color_desc, black_levels, white_level, cam
     print(Demosaic)
     print()
     
-    plt.figure(num="5. Démosaïquage", figsize=(7, 7))
+    plt.figure(num="4. Démosaïquage", figsize=(7, 7))
     plt.imshow(Demosaic, vmin=0.0, vmax=1.0)
     plt.title("5. Démosaïquage")
     plt.xticks([])
@@ -157,6 +157,8 @@ def list_mat_burst_files(raw_pattern, color_desc, black_levels, white_level, cam
     plt.tight_layout()
     plt.show()  # Bloquant jusqu'à la fermeture de cette fenêtre spécifique
     print()
+    
+    plt.imsave("apercu_hdr_fusion.png", Demosaic)
     
 if __name__ == "__main__":
     # Définition du chemin d'accès absolu pointant rigoureusement à la racine du projet GitHub

@@ -36,10 +36,10 @@ Voici le résultat final généré par les noyaux CUDA du framework :
 ```text
 hdr-burst-cuda-pipeline/
 │
-├── 33TJ_20150722_171315_319/                 # Répertoire de données de la rafale Google HDR+
-│   ├── payload_0.dng                          # Images RAW brutes d'origine (Trame 0 à 9)
+├── 33TJ_20150722_171315_319/                  # Répertoire de données de la rafale Google HDR+
+│   ├── payload_N000.dng                       # Images RAW brutes d'origine (Trame 0 à 9)
 │   ├── ...
-│   ├── payload_9.dng
+│   ├── payload_N009.dng
 │   ├── payload_N000_sbl.mat                   # Volumes intermédiaires générés par la Phase 1
 │   ├── ...
 │   └── payload_N009_sbl.mat
