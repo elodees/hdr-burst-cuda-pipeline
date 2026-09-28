@@ -44,22 +44,23 @@ hdr-burst-cuda-pipeline/
 │   ├── ...
 │   └── payload_N009_sbl.mat
 │
-├── core/                                      # Couche algorithmique lourde et kernels JIT/CUDA
-│   ├── __init__.py                            # API publique épurée et étanche du package core
-│   ├── cuda_imaging_pipeline.py               # Alignement sub-pixel, fusion temporelle et tone-mapping
-│   ├── demosaicing.py                         # Reconstruction couleur 3D via Shared Memory SRAM
-│   ├── remove_dead_hot_pixels.py              # Filtrage impulsionnel des pixels défectueux
-│   └── subtract_black_level.py                # Noyau CUDA fusionné (SBL + Normalisation + WB)
+├── core/                                        # Couche algorithmique lourde et kernels JIT/CUDA
+│   ├── __init__.py                              # API publique épurée et étanche du package core
+│   ├── cuda_imaging_pipeline.py                 # Alignement sub-pixel, fusion temporelle et tone-mapping
+│   ├── demosaicing.py                           # Reconstruction couleur 3D via Shared Memory SRAM
+│   ├── remove_dead_hot_pixels.py                # Filtrage impulsionnel des pixels défectueux
+│   └── subtract_black_level.py                  # Noyau CUDA fusionné (SBL + Normalisation + WB)
 │
-├── utils/                                     # Couche d'infrastructure binaire et d'ingestion d'E/S
-│   ├── __init__.py                            # API publique utilitaire du package utils
-│   ├── Matlab_reader_01.py                    # Parser binaire manuel de fichiers .mat (Layout Fortran)
+├── utils/                                       # Couche d'infrastructure binaire et d'ingestion d'E/S
+│   ├── __init__.py                              # API publique utilitaire du package utils
+│   ├── Matlab_reader_01.py                      # Parser binaire manuel de fichiers .mat (Layout Fortran)
 │   ├── RAW_2D_or_3D_export_to_MATLAB_file_01.py # Sérialiseur binaire compressé zlib pour MATLAB v5
-│   └── raw_extractor.py                       # Extracteur de métadonnées EXIF/CFA via rawpy (LibRaw)
+│   └── raw_extractor.py                         # Extracteur de métadonnées EXIF/CFA via rawpy (LibRaw)
 │
-├── environment.yml                            # Export complet de l'environnement Anaconda
-├── hdr_images_fusion_pipeline.py              # Orchestrateur principal de racine (Phase 1 & Phase 2)
-└── requirements.txt                           # Dépendances légères de production
+├── environment.yml                              # Export complet de l'environnement Anaconda
+├── hdr_images_fusion_pipeline.py                # Orchestrateur principal de racine (Phase 1 & Phase 2)
+├── Benchmark_temporal_fusion_01.py              # Script de profilage microseconde et d'évaluation de l'occupancy du noyau de fusion robuste
+└── requirements.txt                             # Dépendances légères de production
 ```
 
 ## 🛠️ Spécifications Matérielles & Optimisations GPU
